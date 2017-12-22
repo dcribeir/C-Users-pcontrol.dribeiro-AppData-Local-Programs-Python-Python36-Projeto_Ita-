@@ -1,3 +1,5 @@
+# coding=utf-8
+
 """Projeto_Itaú URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -13,21 +15,20 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include, path
+from django.conf.urls import url, include
 from django.contrib import admin
+
+from django.conf import settings
+
+from django.views.static import serve as serve_static
 
 from Core import views
 from catalog import views as views_catalog
 
-
-urlpatterns = [
-    path('catalog/', include('catalog.urls')),
-]
-
 urlpatterns = [
 	url(r'^$', views.index, name='index'),
 	url(r'^Contato/$', views.contato, name='contato'),
-	url(r'^Produto/$', views.produto, name='produto'),
-    url(r'^Produto_Lista/', include('catalog.urls', namespace='catalog')),
+	#url(r'^Produto/$', views.produto, name='produto'),
+    url(r'^Catalogo/', include('catalog.urls', namespace='catalog')),
     url(r'^admin/', admin.site.urls),
 ]
