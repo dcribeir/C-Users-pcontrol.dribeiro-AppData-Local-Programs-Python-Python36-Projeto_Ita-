@@ -2,20 +2,30 @@
 
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core.mail import send_mail
+from django.conf import settings
+from django.views.generic import View, TemplateView
 
-#from catalog.models import Category
+from .forms import ContatoForm
 
-def index(request):
-	return render(request, 'index.html')
 
+class IndexView(TemplateView):
+	
+	template_name = 'index.html'
+
+index = IndexView.as_view()
+		
 
 def contato(request):
-    return render(request, 'contato.html')
-
-
-def produto(request):
-    return render(request, 'produto.html')
-
-
-#def produto_lista(request):
-#    return render(request, 'produto_lista.html')
+	success = False
+	form = ContatoForm(request.POST or None)
+	if form.is_valid():
+		form.send_mail()
+		success = True
+	else:
+		form = ContatoForm()
+	context = {
+		'form': form,
+		'success': success
+	}
+	return render(request, 'contato.html', context)
