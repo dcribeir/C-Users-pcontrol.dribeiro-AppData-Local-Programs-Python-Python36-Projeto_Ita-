@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}
+Finalizar Compra
+{% endblock %}
+
+{% block container %}
+<ol class="breadcrumb">
+  <li><a href="{% url 'index' %}">Início</a></li>
+  <li><a href="{% url 'checkout:cart_item' %}">Carrinho de Compras</a></li>
+  <li class="active">Finalizar Compra</li>
+</ol>
+<div class="page-header">
+    <h1>Finalizar Compra</h1>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            Pedido #{{ order.pk }}
+        </p>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+        <div class="alert alert-success">
+            Pedido realizado com sucesso, para realizar o pagamento faça o depósito na seguinte conta: Banco: Itaú Ag.: XXXX CC.: XXXXXX-X
+        </div>
+        <p>
+            
+        </p>
+    </div>
+</div>
+{% endblock %}
