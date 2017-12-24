@@ -15,6 +15,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 import dj_database_url
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -53,7 +54,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -85,7 +86,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'Projeto_Itaú.wsgi.application'
+WSGI_APPLICATION = 'Projeto_Itaú.wsgi.application'
 
 
 # Database
