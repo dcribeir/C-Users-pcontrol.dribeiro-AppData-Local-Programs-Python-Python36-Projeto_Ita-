@@ -3,7 +3,7 @@ Loja virtual - Compra de Moedas
 WEB: https://projeto-itau.herokuapp.com & https://projeto-itau.herokuapp.com/admin
 LOCAL: http://localhost:8000
 
-Obs.: Devido as minhas atividades em paralelo, não consegui deixar 100% o meu ambiente WEB, o mesmo está com problemas para montar o layout, porém o mesmo está 100% funcional.
+ATENÇÃO: Devido as atividades que exerço no dia a dia, não consegui deixar 100% o meu ambiente WEB, o mesmo está com problemas para montar o layout, por outro lado ele está 100% funcional.
 Usuário Admin: itaudigital@itau.com
 Senha: Digital@01
 
