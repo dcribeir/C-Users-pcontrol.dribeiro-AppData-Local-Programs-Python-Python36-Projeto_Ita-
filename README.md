@@ -1,4 +1,4 @@
-# Itaú Digital
+# Itaú Digital - Sempre pensando no amanhã.
 Loja virtual - Compra de Moedas 
 WEB: https://projeto-itau.herokuapp.com & https://projeto-itau.herokuapp.com/admin
 LOCAL: http://localhost:8000
@@ -45,6 +45,3 @@ Os testes foram executados local.
 
 Os Scripts estaram disponíveis na pasta "Testes", juntamente com a planilha de execução e um vídeo da execução dos mesmos.
 ```
-
-
-# Itaú Digital - Sempre pensando no amanhã.
