@@ -17,7 +17,7 @@ class RegisterViewTestCase(TestCase):
 
     def test_register_ok(self):
         data = {
-            'username': 'gileno', 'password1': 'teste123', 'password2': 'teste123',
+            'username': 'Davi.Ribeiro', 'password1': 'teste123', 'password2': 'teste123',
             'email': 'test@test.com'
         }
         response = self.client.post(self.register_url, data)
@@ -26,7 +26,7 @@ class RegisterViewTestCase(TestCase):
         self.assertEquals(User.objects.count(), 1)
 
     def test_register_error(self):
-        data = {'username': 'gileno', 'password1': 'teste123', 'password2': 'teste123'}
+        data = {'username': 'Davi.Ribeiro', 'password1': 'teste123', 'password2': 'teste123'}
         response = self.client.post(self.register_url, data)
         self.assertFormError(response, 'form', 'email', 'Este campo é obrigatório.')
 

@@ -28,5 +28,5 @@ class ProductTestCase(TestCase):
     def test_get_absolute_url(self):
         self.assertEquals(
             self.product.get_absolute_url(),
-            reverse('catalog:product', kwargs={'slug': 'produto'})
+            reverse('catalog:produto', kwargs={'slug': 'produto'})
         )
