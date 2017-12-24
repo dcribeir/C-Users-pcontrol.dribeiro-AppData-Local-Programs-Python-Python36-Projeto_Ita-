@@ -1,1 +1,1 @@
-web: gunicorn Projeto_Itaú.wsgi --log-file -
+web: gunicorn Projeto_Itaú.wsgi --log-file=-
