@@ -43,5 +43,5 @@ Rodar os testes no Git, através do comando python manage.py test (Informar o m�
 Foram criados testes Funcionais para validar os requisitos do E-commerce.
 Os testes foram executados local.
 
-Os Scripts estaram disponíveis na pasta "Testes", juntamente com a planilha de execução e um vídeo da validação dos testes funcionais.
+Os Scripts estão disponíveis na pasta "Testes", juntamente com a planilha de execução e um vídeo da validação dos testes funcionais.
 ```
