@@ -1,32 +1,13 @@
 # Itaú Digital - Sempre pensando no amanhã.
 Loja virtual - Compra de Moedas 
+
+
+## Execução:
+
 WEB: https://projeto-itau.herokuapp.com & https://projeto-itau.herokuapp.com/admin
-LOCAL: http://localhost:8000
 
 Usuário Admin: itaudigital@itau.com
 Senha: Digital@01
-
-## Ecommerce desenvolvido em Python/Django.
-
-### Pré-requisito: Ter instalado Git-2.15.1.2, Python-3.6.3 e Django-1.10.
-
-
-## Instalação/Execução
-
-### Clone o projeto:
-```
-Execute os comandos abaixo, após a instalação dos requisitos e com o Git aberto dentro da pasta raiz.
-Na raiz do projeto no GitHub, terá um documento de auxílio. (Manual de Configuração)
-
-git clone https://github.com/dcribeir/Projeto-Itau
-cd Projeto-Itau
-```
-
-### Instale as dependencias:
-```
-pip install -r requirements.txt
-python manage.py runserver
-```
 
 
 ## Testes
