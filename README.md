@@ -6,9 +6,6 @@ Loja virtual - Compra de Moedas
 
 WEB: https://projeto-itau.herokuapp.com & https://projeto-itau.herokuapp.com/admin
 
-Usuário Admin: itaudigital@itau.com
-Senha: Digital@01
-
 
 ## Testes
 
